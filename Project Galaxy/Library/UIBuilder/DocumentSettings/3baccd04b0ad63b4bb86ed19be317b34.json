@@ -1,0 +1,30 @@
+{
+    "UxmlGuid": "3baccd04b0ad63b4bb86ed19be317b34",
+    "UxmlPath": "Assets/LOSE.uxml",
+    "CanvasX": 183,
+    "CanvasY": 0,
+    "CanvasWidth": 334,
+    "CanvasHeight": 450,
+    "MatchGameView": false,
+    "ZoomScale": 0.6499999761581421,
+    "PanOffset": {
+        "x": 114.40524291992188,
+        "y": 173.06900024414063
+    },
+    "ColorModeBackgroundOpacity": 1.0,
+    "ImageModeCanvasBackgroundOpacity": 1.0,
+    "CameraModeCanvasBackgroundOpacity": 1.0,
+    "EnableCanvasBackground": false,
+    "CanvasBackgroundMode": 0,
+    "CanvasBackgroundColor": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 1.0
+    },
+    "CanvasBackgroundImage": {
+        "instanceID": 0
+    },
+    "CanvasBackgroundImageScaleMode": 1,
+    "CanvasBackgroundCameraName": ""
+}
