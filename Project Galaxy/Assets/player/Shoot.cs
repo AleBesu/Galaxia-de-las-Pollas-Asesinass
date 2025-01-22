@@ -10,12 +10,13 @@ public class Shooter : MonoBehaviour
     public int nivel = 0;
     private float progresoDeNivel = 0;
    public float  cadence =1;
+   AudioSource audioSource;
 
    float timeToShoot = 0;
     // Start is called before the first frame update
     void Start()
     {
-        
+        audioSource = gameObject.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -28,6 +29,7 @@ public class Shooter : MonoBehaviour
 
         if (timeToShoot >=  1/ cadence)
         {
+        audioSource.Play();
        GameObject instanceBullet =     Instantiate(bullet,new Vector3(transform.position.x,transform.position.y +0.1f,transform.position.z),transform.rotation);
       Destroy(instanceBullet,3);
         

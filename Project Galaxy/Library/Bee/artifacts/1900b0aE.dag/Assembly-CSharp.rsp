@@ -337,7 +337,7 @@
 "Assets/Menu/Menu Funcions.cs"
 "Assets/player/Artificial Inteligence.cs"
 "Assets/player/bullet.cs"
-"Assets/player/Movimiento.cs"
+"Assets/player/Movimiento Mouse.cs"
 "Assets/player/Puntos/GeneradorDePuntos.cs"
 "Assets/player/Puntos/punto cadencia.cs"
 "Assets/player/Shoot.cs"
