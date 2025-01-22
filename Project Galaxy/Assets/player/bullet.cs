@@ -29,7 +29,7 @@ public class bullet : MonoBehaviour
         if (other.tag == "enemy")
         {
             Destroy(gameObject);
-       
+        
         }
     }
 

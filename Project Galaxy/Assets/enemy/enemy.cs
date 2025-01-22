@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class enemy : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
     float tiempoEntreCargas = 3 ;
     float cargando = 0;
     bool enMovimiento = false;
     public float distanciaMinima = -4.5f;
+   
     Vector3 objetivo;
 
 
@@ -26,6 +27,7 @@ objetivo = new Vector3(transform.position.x,transform.position.y - espacioEntreE
        if (transform.position.y <= distanciaMinima)
        {
         Debug.Log("haz perdido");
+        Destroy(gameObject);
        }
 
 
@@ -54,8 +56,9 @@ objetivo = new Vector3(transform.position.x,transform.position.y - espacioEntreE
      private void OnTriggerEnter(Collider other) {
      
         if (other.tag == "bullet")
-        {
+        {   
             Destroy(gameObject);
+       
         }
 
         if (other.tag == "Lose Zone")

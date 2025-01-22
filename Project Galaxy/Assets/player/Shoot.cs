@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +7,8 @@ public class Shooter : MonoBehaviour
 { 
 
     public GameObject bullet;
+    public int nivel = 0;
+    private float progresoDeNivel = 0;
    public float  cadence =1;
 
    float timeToShoot = 0;
@@ -19,8 +22,9 @@ public class Shooter : MonoBehaviour
     void Update()
     { 
         timeToShoot += Time.deltaTime;
-         
-
+        
+      
+   
 
         if (timeToShoot >=  1/ cadence)
         {
