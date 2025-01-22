@@ -9,11 +9,11 @@ using System;
 public class MenuFuncions : MonoBehaviour
 {
  
- public String playSceneName = "PlayingScene";
+ public String historySceneName = "HistoryScene";
 
   public void playGame(){
   
-    SceneManager.LoadScene(playSceneName);
+    SceneManager.LoadScene(historySceneName);
 
 
   }

@@ -40,6 +40,7 @@
     <Analyzer Include="C:\Program Files\Unity 2022.3.55f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\History\Chapter.cs" />
      <Compile Include="Assets\player\Puntos\punto cadencia.cs" />
      <Compile Include="Assets\player\Puntos\GeneradorDePuntos.cs" />
      <Compile Include="Assets\player\Artificial Inteligence.cs" />
@@ -49,9 +50,12 @@
      <Compile Include="Assets\player\Movimiento Mouse.cs" />
      <Compile Include="Assets\Menu\Menu Funcions.cs" />
      <Compile Include="Assets\enemy\Enemy Generator.cs" />
+     <Compile Include="Assets\History\History Boton.cs" />
+     <Compile Include="Assets\History\History Manager.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+     <None Include="Assets\History\readme.txt" />
      <None Include="Assets\hw_nightsky\license.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
