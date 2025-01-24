@@ -223,8 +223,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -5, y: 0}
-  m_SizeDelta: {x: -20, y: 0}
+  m_AnchoredPosition: {x: -0.10500336, y: 0}
+  m_SizeDelta: {x: -10.209, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &518123753
 PrefabInstance:
@@ -353,8 +353,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -5, y: 0}
-  m_SizeDelta: {x: -20, y: 0}
+  m_AnchoredPosition: {x: -0.17500305, y: 0}
+  m_SizeDelta: {x: -10.349, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &831808459
 GameObject:
@@ -366,7 +366,6 @@ GameObject:
   m_Component:
   - component: {fileID: 831808460}
   - component: {fileID: 831808461}
-  - component: {fileID: 831808462}
   m_Layer: 5
   m_Name: Barra de Salud
   m_TagString: Untagged
@@ -383,7 +382,7 @@ RectTransform:
   m_GameObject: {fileID: 831808459}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2087492, y: 2.4386785, z: 1.4832007}
+  m_LocalScale: {x: 0.8668665, y: 1.7489226, z: 1.0636922}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1574350825}
@@ -392,7 +391,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 328, y: 201}
+  m_AnchoredPosition: {x: 328.6, y: 195.2}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &831808461
@@ -442,34 +441,22 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.5
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_TargetAssemblyTypeName: SaludPlayer, Assembly-CSharp
         m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 0
---- !u!114 &831808462
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 831808459}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1258196ce3634c4e93520c3506744a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &887315869
 GameObject:
   m_ObjectHideFlags: 0
@@ -1024,9 +1011,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 670d00140467bc24e9133f7c63093bf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  energiaActual: 100
-  energiaTotal: 10
-  velocidadDeRecarga: 3.56
+  energiaActual: 10
+  energiaTotal: 100
+  energyBar: {fileID: 1466968986}
+  velocidadDeRecarga: 2
 --- !u!114 &1429295853 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1544509545443892857, guid: e953d0ceb6fcf18428aa6c3273ee140e, type: 3}
@@ -1052,6 +1040,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   saludActual: 10
   saludTotal: 10
+  barraDeSalud: {fileID: 831808461}
 --- !u!54 &1429295866
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1152,7 +1141,7 @@ RectTransform:
   m_GameObject: {fileID: 1466968984}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2087492, y: 2.4386785, z: 1.4832007}
+  m_LocalScale: {x: 0.8668665, y: 1.7489226, z: 1.0636922}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1013730328}
@@ -1161,7 +1150,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 328, y: 160}
+  m_AnchoredPosition: {x: 328.96, y: 165.8}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1466968986
@@ -1211,7 +1200,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.52
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []

@@ -35,7 +35,7 @@ public  class BasicEnemy : Enemy
  
           if (zonaDedisparoDespejada)
           {
-               
+             
              shoot();
           }
           
@@ -111,10 +111,7 @@ public  class BasicEnemy : Enemy
       GameObject nuevoDisparo = Instantiate<GameObject>(enemyBullet,new  Vector3(transform.position.x,transform.position.y - 1,transform.position.z),enemyBullet.transform.rotation);
      
 
-    if (name == "clon3")
-    {
-      Debug.Log(tiempoEntreDisparos);
-    }
+
      tiempoEntreDisparos = Random.Range( MinimotiempoDisparo,MaximotiempoDisparo);
     cargandoDisparo  = 0;
      }
