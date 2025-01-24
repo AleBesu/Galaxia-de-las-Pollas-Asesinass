@@ -7,6 +7,9 @@ public class DetectorDeAliados : MonoBehaviour
 {
 
    HashSet<GameObject> aliadosEnZonaDeDisparo =  new HashSet<GameObject>();
+   float contadorDeZonaVacia = 0;
+   
+
    
     
     // Start is called before the first frame update
@@ -17,8 +20,14 @@ public class DetectorDeAliados : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        
+    {   
+        contadorDeZonaVacia += Time.deltaTime;
+        if (contadorDeZonaVacia >=3)
+        {
+            aliadosEnZonaDeDisparo.Clear();
+        }
+
+
     }
 
 
@@ -26,6 +35,7 @@ public class DetectorDeAliados : MonoBehaviour
  
 
     private void OnTriggerStay(Collider other) {
+        
 
 
         if (other.tag == "enemy")

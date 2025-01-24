@@ -10,7 +10,7 @@ public class GeneradorDeOleadas : MonoBehaviour
     
     public float tiempoEntreCargas = 3;
 
-    float cargando = 3;
+    float cargando ;
     public string pathDB;
    
     public  List<GameObject>  enemyList;
@@ -19,7 +19,7 @@ public class GeneradorDeOleadas : MonoBehaviour
     int oleadaActualIndex = 0;
 
     TextAsset enemylevelDB;
-    float posicionXActual = -8;
+    float posicionXActual = -7;
 
     int contador = 0;
 
@@ -28,6 +28,7 @@ public class GeneradorDeOleadas : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        cargando = tiempoEntreCargas;
      enemylevelDB = Resources.Load<TextAsset>(pathDB);
 
 

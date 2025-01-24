@@ -248,7 +248,7 @@ PrefabInstance:
       objectReference: {fileID: 1709619352}
     - target: {fileID: 1544509545443892857, guid: e953d0ceb6fcf18428aa6c3273ee140e, type: 3}
       propertyPath: cadence
-      value: 1
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3991575600903655236, guid: e953d0ceb6fcf18428aa6c3273ee140e, type: 3}
       propertyPath: m_Enabled
@@ -1024,7 +1024,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 670d00140467bc24e9133f7c63093bf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  energiaActual: 10
+  energiaActual: 100
   energiaTotal: 10
   velocidadDeRecarga: 3.56
 --- !u!114 &1429295853 stripped
@@ -1995,6 +1995,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5356053328233894744, guid: 3d9c73c77725bf143a681ae7c14907a0, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6788484573606233295, guid: 3d9c73c77725bf143a681ae7c14907a0, type: 3}
       propertyPath: m_UseGravity
       value: 0
@@ -2054,6 +2058,14 @@ PrefabInstance:
     - target: {fileID: 7631750684286455942, guid: 3d9c73c77725bf143a681ae7c14907a0, type: 3}
       propertyPath: m_LocalPosition.z
       value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369796945222383634, guid: 3d9c73c77725bf143a681ae7c14907a0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.6119
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369796945222383634, guid: 3d9c73c77725bf143a681ae7c14907a0, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8301745
       objectReference: {fileID: 0}
     - target: {fileID: 8905191339393879180, guid: 3d9c73c77725bf143a681ae7c14907a0, type: 3}
       propertyPath: m_Name

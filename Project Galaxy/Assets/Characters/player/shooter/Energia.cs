@@ -20,11 +20,10 @@ public class Energia : MonoBehaviour
     void Update()
     {
 
-        if (energiaActual< energiaTotal)
-        {
+ 
             energiaActual+= Time.deltaTime / velocidadDeRecarga ;
-
-        }
+            Debug.Log(energiaActual);
+        
 
       
         
