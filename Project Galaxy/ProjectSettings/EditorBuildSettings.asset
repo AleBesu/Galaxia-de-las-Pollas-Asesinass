@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/playingAndroid.unity
+    guid: 2ce411ea37f58d44a9e784e3d50da778
+  - enabled: 1
     path: Assets/Menu Escena.unity
     guid: 5b02a2a12f67d4d49b2277c19b6b28cd
   - enabled: 1

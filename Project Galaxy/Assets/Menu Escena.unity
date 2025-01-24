@@ -404,11 +404,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 250324942}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5dbb150df1e701d448b6b7a636a5e17f, type: 3}
+  m_Script: {fileID: 11500000, guid: 9b5ebf2fcb69bba49b1fe047132c6fb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanciaMinima: -4.5
-  espacioEntreEnemigos: 2
+  tiempoEntreCargas: 0
+  distanciaMinimaY: 0
+  espacioEntreEnemigos: 0
 --- !u!1 &464956645
 GameObject:
   m_ObjectHideFlags: 0
@@ -673,6 +674,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tiempoEntreCargas: 3
   enemisToGenerate: 9
+  posicionMinX: -8
   enemy: {fileID: 250324942}
 --- !u!4 &1393975101
 Transform:
@@ -1225,7 +1227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9139391570c015f48ad8b4668f8c2460, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playSceneName: PlayingScene
+  historySceneName: HistoryScene
 --- !u!1001 &7119317750994640891
 PrefabInstance:
   m_ObjectHideFlags: 0

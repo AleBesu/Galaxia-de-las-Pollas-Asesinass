@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/HistoryScene.unity
+- path: Assets/PlayingScene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

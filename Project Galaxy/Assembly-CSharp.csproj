@@ -40,20 +40,34 @@
     <Analyzer Include="C:\Program Files\Unity 2022.3.55f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Characters\enemy\Enemis\types\Basic Enemy.cs" />
+     <Compile Include="Assets\Characters\enemy\Enemis\abstract enemy.cs" />
+     <Compile Include="Assets\Characters\player\Movimiento\Android Movimiento.cs" />
+     <Compile Include="Assets\Characters\Salud.cs" />
      <Compile Include="Assets\History\Chapter.cs" />
-     <Compile Include="Assets\player\Puntos\punto cadencia.cs" />
-     <Compile Include="Assets\player\Puntos\GeneradorDePuntos.cs" />
-     <Compile Include="Assets\player\Artificial Inteligence.cs" />
-     <Compile Include="Assets\player\bullet.cs" />
-     <Compile Include="Assets\enemy\enemy.cs" />
-     <Compile Include="Assets\player\Shoot.cs" />
-     <Compile Include="Assets\player\Movimiento Mouse.cs" />
+     <Compile Include="Assets\Characters\player\Salud\Salud Player.cs" />
+     <Compile Include="Assets\Characters\player\IA\Artificial Inteligence.cs" />
+     <Compile Include="Assets\Characters\enemy\Salud Enemy.cs" />
+     <Compile Include="Assets\Camara Restrictions.cs" />
+     <Compile Include="Assets\Characters\enemy\Enemis\Bullet Enemy.cs" />
+     <Compile Include="Assets\Characters\enemy\Enemis\types\Mediun Enemy.cs" />
+     <Compile Include="Assets\Characters\enemy\Enemy Generato Aleatoryr.cs" />
+     <Compile Include="Assets\Characters\enemy\Enemis\types\double enemy.cs" />
      <Compile Include="Assets\Menu\Menu Funcions.cs" />
-     <Compile Include="Assets\enemy\Enemy Generator.cs" />
+     <Compile Include="Assets\Characters\enemy\Enemis\DetectorDeAliados.cs" />
+     <Compile Include="Assets\Characters\player\shooter\Energia.cs" />
      <Compile Include="Assets\History\History Boton.cs" />
+     <Compile Include="Assets\Characters\player\Puntos\GeneradorDePuntos.cs" />
+     <Compile Include="Assets\Characters\enemy\Hard Enemy.cs" />
+     <Compile Include="Assets\Characters\player\Puntos\punto cadencia.cs" />
+     <Compile Include="Assets\Characters\player\shooter\bullet.cs" />
+     <Compile Include="Assets\Characters\enemy\Enemy Generator Manual.cs" />
+     <Compile Include="Assets\Characters\player\Movimiento\Movimiento Mouse.cs" />
+     <Compile Include="Assets\Characters\player\shooter\Shoot.cs" />
      <Compile Include="Assets\History\History Manager.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+     <None Include="Assets\Resources\enemigoslista.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
      <None Include="Assets\History\readme.txt" />
      <None Include="Assets\hw_nightsky\license.txt" />
@@ -324,6 +338,15 @@
     </Reference>
     <Reference Include="UnityEditor.UnityConnectModule">
         <HintPath>C:\Program Files\Unity 2022.3.55f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Android.Types">
+        <HintPath>C:\Program Files\Unity 2022.3.55f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Android.Gradle">
+        <HintPath>C:\Program Files\Unity 2022.3.55f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Gradle.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Android.GradleProject">
+        <HintPath>C:\Program Files\Unity 2022.3.55f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.GradleProject.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>C:\Program Files\Unity 2022.3.55f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
