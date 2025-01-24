@@ -21,6 +21,8 @@ public class GeneradorDeOleadas : MonoBehaviour
     TextAsset enemylevelDB;
     float posicionXActual = -8;
 
+    int contador = 0;
+
 
    
     // Start is called before the first frame update
@@ -69,11 +71,12 @@ public class GeneradorDeOleadas : MonoBehaviour
         } else
         {
          GameObject newInstance = Instantiate<GameObject>(enemyList[tipoDeEnemigo],new Vector3(x: posicionXActual, y: 5,z:0),enemyList[tipoDeEnemigo].transform.rotation);
-         
-         
+          newInstance.GetComponent<BasicEnemy>().tiempoDeCargaY = tiempoEntreCargas;
+         newInstance.name = "clon" + contador.ToString() ;
          posicionXActual += 2;
+         
         }
-        
+         contador ++;
        
 
        }

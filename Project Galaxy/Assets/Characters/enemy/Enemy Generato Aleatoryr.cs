@@ -10,7 +10,7 @@ public class EnemyGenerator : MonoBehaviour
     
    public float posicionMinX = -8;
 
-    float posicionDeEnemigos = -8;
+    
 
     public GameObject enemy;
     void Start()
@@ -32,15 +32,15 @@ public class EnemyGenerator : MonoBehaviour
             for (int i = 0; i< enemisToGenerate;i ++  ){
         
             GameObject newEnemy = Instantiate(enemy,new Vector3(posicionMinX  + i *2  ,5,0),rotation:enemy.transform.rotation);
-            
-            
+          
+            newEnemy.GetComponent<BasicEnemy>().tiempoDeCargaY = tiempoEntreCargas;
 
          
             
          
             }
             
-          posicionDeEnemigos +=  enemisToGenerate;
+  
           cargandoEnemigos = 0;
         }
 

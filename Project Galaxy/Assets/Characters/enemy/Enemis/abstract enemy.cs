@@ -7,17 +7,12 @@ public abstract class Enemy : MonoBehaviour
   
    
    public float distanciaDeMovimientoY = 2;
-   public float distanciaDeMovimientoX = 2;
-   public float tiempoDeCargaX =2;
-   public float tiempoDeCargaY =5;
-   protected float cargandoX = 0;
-
-   public float direccionYRangoDeMovimientoX =  1.5f;
    protected float cargandoY = 0;
-   protected float posicionInicialX;
+   public float tiempoDeCargaY =3;
 
 
-   protected float objetivoX;
+
+
    protected float objetivoY;
 
    [HideInInspector]

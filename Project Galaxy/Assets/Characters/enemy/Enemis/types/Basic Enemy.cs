@@ -7,12 +7,14 @@ public  class BasicEnemy : Enemy
     // Start is called before the first frame update
    public GameObject enemyBullet;
    float cargandoDisparo =0;
-
-   public float tiempoMaximoDeDisparo =20;
-   float tiempoEntreDisparos;
-
+  public float MinimotiempoDisparo =2;
+   public float MaximotiempoDisparo =10;
   
-   
+   float tiempoEntreDisparos;
+   public float distanciaDeMovimientoX = 2;
+   protected float posicionInicialX;
+   public float direccionYRangoDeMovimientoX =  1.5f;
+   public float objetivoX;
 
 
 
@@ -27,13 +29,13 @@ public  class BasicEnemy : Enemy
       }
   
     void Update()
-    {  
+    {       
           movimiento();
 
-
+ 
           if (zonaDedisparoDespejada)
           {
-            
+               
              shoot();
           }
           
@@ -45,15 +47,14 @@ public  class BasicEnemy : Enemy
     }
 
    void movimiento (){
-    cargandoX+= Time.deltaTime;
+ 
    
     objetivoX = posicionInicialX + direccionYRangoDeMovimientoX;
-    if (cargandoX>= tiempoDeCargaX )
-    {
-      Debug.Log("cargando");
+
+
       transform.Translate(new Vector3(direccionYRangoDeMovimientoX,0,0) * Time.deltaTime *2 );
  
-    }
+    
 
    if (direccionYRangoDeMovimientoX > 0 && transform.position.x > objetivoX ||
         direccionYRangoDeMovimientoX < 0 && transform.position.x < objetivoX)
@@ -63,13 +64,10 @@ public  class BasicEnemy : Enemy
         direccionYRangoDeMovimientoX *= -1;
 
         
-        cargandoX = 0;
-
-        Debug.Log("Llegó al objetivo, cargandoX reiniciado");
     }
 
      cargandoY += Time.deltaTime;
-     if (cargandoY >= tiempoDeCargaY && transform.position.y >=objetivoY)
+     if (cargandoY >= tiempoDeCargaY -1 && transform.position.y >=objetivoY)
      {
       transform.Translate(Vector3.down * Time.deltaTime *2);
 
@@ -111,10 +109,16 @@ public  class BasicEnemy : Enemy
      if (cargandoDisparo >= tiempoEntreDisparos)
      {
       GameObject nuevoDisparo = Instantiate<GameObject>(enemyBullet,new  Vector3(transform.position.x,transform.position.y - 1,transform.position.z),enemyBullet.transform.rotation);
+     
 
+    if (name == "clon3")
+    {
+      Debug.Log(tiempoEntreDisparos);
+    }
+     tiempoEntreDisparos = Random.Range( MinimotiempoDisparo,MaximotiempoDisparo);
     cargandoDisparo  = 0;
      }
-          tiempoEntreDisparos = Random.Range ( 1,tiempoEntreDisparos);
+          
 
     }
 

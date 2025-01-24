@@ -19,7 +19,7 @@ public class SaludPlayer : Salud
 
         saludActual --;
         Destroy(other.gameObject);
-        Debug.Log(saludActual);
+      
       }
 
     }

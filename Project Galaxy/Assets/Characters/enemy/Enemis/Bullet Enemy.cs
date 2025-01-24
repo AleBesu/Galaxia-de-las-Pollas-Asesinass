@@ -25,7 +25,7 @@ public class BulletEnemy : MonoBehaviour
         { 
             
           other.GetComponent<Salud>().saludActual --;
-          Debug.Log(other.GetComponent<Salud>().saludActual);
+
           Destroy(gameObject);
         }
     }
